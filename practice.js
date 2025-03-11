@@ -9,7 +9,7 @@ function calculateTax(incomes, expenses) {
   return tax;
 }
 const income = calculateTax(10000, 3000);
-// console.log(income);
+console.log(income);
 
 // problem 2
 function sendNotification(emails) {

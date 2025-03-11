@@ -1,44 +1,42 @@
 //problem 1
-// function calculateTax(incomes, expenses) {
-//   const income = incomes - expenses;
-//   const tax = (income * 20) / 100;
-//   if (tax < 0) {
-//     return "Invalid Input";
-//   }
+function calculateTax(incomes, expenses) {
+  const income = incomes - expenses;
+  const tax = (income * 20) / 100;
+  if (tax < 0) {
+    return "Invalid Input";
+  }
 
-//   return tax;
-// }
+  return tax;
+}
 
-// const incomeExpenses = calculateTax(10000, 3000);
-// console.log(incomeExpenses);
+const incomeExpenses = calculateTax(10000, 3000);
+console.log(incomeExpenses);
 
 // problem 2
-// function sendNotification(gmail) {
-//   if (!gmail.includes("@")) {
-//     return "Invalid Email";
-//   }
-//   const word = gmail.split("@");
-//   let text = word.join(" sent you an email from ");
-//   return text;
-// }
-// let text = "zihad.ph@gmail.com";
-// const word = sendNotification(text);
-// console.log(word);
+function sendNotification(gmail) {
+  if (!gmail.includes("@")) {
+    return "Invalid Email";
+  }
+  const word = gmail.split("@");
+  let text = word.join(" sent you an email from ");
+  return text;
+}
+let text = "zihad.ph@gmail.com";
+const word = sendNotification(text);
+console.log(word);
 
 //problem 3
-// const checkDigitsInName = (names) => true;
-// if (typeof names !== "string") {
-//   return " Invalid Input";
-// }
-// for (const name of names) {
-//   if (!isNaN(name)) return true;
+const checkDigitsInName = (names) => true;
+if (typeof names !== "string") {
+  return " Invalid Input";
+}
+for (const name of names) {
+  if (!isNaN(name)) return true;
+}
+return false;
 
-// }
-// return false;
-// };
-
-// const name = checkDigitsInName("rafi1");
-// console.log("Name", name);
+const name = checkDigitsInName("rafi1");
+console.log("Name", name);
 
 //problem 4
 function calculateFinalScore(obj) {
@@ -75,7 +73,7 @@ const parson = {
 // const parson = [1, 2, 3, 4];
 
 const finalScore = calculateFinalScore(parson);
-// console.log(finalScore);
+console.log(finalScore);
 
 // problem 5
 function waitingTime(waitingTimes, serialNumber) {
