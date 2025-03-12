@@ -1,8 +1,8 @@
-function waitingTime(waitingTimes, serialNumber) {
+function waitingTime(waitingTimes, serialNumbers) {
   if (
-    !Array.isArray(waitingTime) ||
-    isNaN(serialNumber) ||
-    typeof serialNumber === "string"
+    !Array.isArray(waitingTimes) ||
+    isNaN(serialNumbers) ||
+    typeof serialNumbers === "string"
   ) {
     return "Invalid Input";
   }
@@ -10,6 +10,11 @@ function waitingTime(waitingTimes, serialNumber) {
     (sum, interview) => sum + interview,
     0
   );
+  const avg = totalWaitingTime / waitingTimes.length;
+  const average = Math.round(avg);
+  const totalSerial = serialNumbers - waitingTimes.length - 1;
+  const totalTime = average * totalSerial;
+  return totalTime;
 }
 const interviewers = [3, 5, 7, 11, 6];
 const isratSerial = 10;
