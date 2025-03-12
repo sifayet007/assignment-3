@@ -16,8 +16,8 @@ function waitingTime(waitingTimes, serialNumbers) {
   const totalTime = time * average;
   return totalTime;
 }
-const interviewers = [3, 5, 7, 11, 6];
-const isratSerial = 10;
+const interviewers = [13, 2, 6, 7, 10];
+const isratSerial = 6;
 
 const willTakeTime = waitingTime(interviewers, isratSerial);
 console.log(willTakeTime);
